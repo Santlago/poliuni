@@ -17,7 +17,7 @@ export default {
       },
       {
         dark: {
-          ...themes.dark
+          ...themes.synthwave
         }
       }
     ],
