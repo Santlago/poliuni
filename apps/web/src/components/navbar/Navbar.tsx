@@ -1,3 +1,4 @@
+import { Star } from 'lucide-react'
 import { ThemeController } from '../theme-controller'
 
 export function Navbar() {
@@ -27,7 +28,7 @@ export function Navbar() {
             <li><a>Item 3</a></li>
           </ul>
         </div>
-        <a className="btn btn-ghost text-xl">PoliUni</a>
+        <a className="btn btn-ghost text-xl"><Star />PoliUni</a>
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1">
