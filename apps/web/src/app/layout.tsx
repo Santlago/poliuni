@@ -40,7 +40,7 @@ export default function RootLayout({
           `}
       >
         <Navbar />
-        <main className='grow container p-4'>
+        <main className='grow p-4 bg-base-300'>
           {children}
         </main>
         <Footer />
