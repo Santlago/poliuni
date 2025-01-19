@@ -12,7 +12,7 @@ export default function Home() {
             <button className='btn'>Saiba mais</button>
           </div>
         </div>
-        <div className="card card-compact bg-base-100 w-96 shadow-xl">
+        <div className="card card-compact bg-base-100 max-w-[400px] shadow-xl">
           <figure>
             <Image src='/landing-page.jpg' alt='children-learning' height={3024} width={4032} className='w-full' />
           </figure>
@@ -33,7 +33,7 @@ export default function Home() {
             title="YouTube video player"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowFullScreen
-            className='card'
+            className='card w-full'
           ></iframe>
         </div>
       </section>
