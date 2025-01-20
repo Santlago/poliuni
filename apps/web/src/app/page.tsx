@@ -1,9 +1,10 @@
+import { YouTubeVideo } from '@/components/youtubevideo'
 import Image from 'next/image'
 
 export default function Home() {
   return (
     <>
-      <section className='flex flex-col lg:flex-row gap-4 justify-around py-8 px-4'>
+      <section className='flex flex-col lg:flex-row gap-4 justify-around py-8'>
         <div className='flex flex-col justify-around py-8'>
           <h1 className='text-6xl font-bold'>Poliglotas no Universo!</h1>
           <p className='max-w-[700px]'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
@@ -25,17 +26,9 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className='bg-base-200 card flex items-center py-4 gap-4 justify-center'>
-        <h1 className='text-2xl font-semibold'>Cada aula importa!</h1>
-        <div>
-          <iframe
-            src="https://www.youtube.com/embed/watch?v=LWNvubHRIkQ&list=PLv4rvieBHve0bXjfXwwkabU59HXWMJy1N"
-            title="YouTube video player"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowFullScreen
-            className='card w-full'
-          ></iframe>
-        </div>
+      <section className='bg-base-200 card flex items-center p-4 gap-4 justify-center'>
+        <h1 className='text-2xl font-semibold'>Quem Somos</h1>
+        <YouTubeVideo src='https://www.youtube.com/embed/8b3Ea2o9JYA' className='card w-full lg:w-1/3 aspect-video'/>
       </section>
     </>
   )
