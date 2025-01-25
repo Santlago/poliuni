@@ -3,7 +3,7 @@ import { ThemeController } from '../theme-controller'
 
 export function Navbar() {
   return (
-    <div className="navbar bg-base-200 drop-shadow-lg">
+    <div className="navbar bg-base-200 drop-shadow-lg z-50">
       <div className="navbar-start">
         <div className="dropdown">
           <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
