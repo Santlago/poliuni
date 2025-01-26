@@ -19,7 +19,7 @@ export default function Home() {
         <div className='absolute bg-black inset-0 opacity-75 lg:opacity-50'></div>
         <div className='relative flex flex-col gap-4 lg:items-center justify-around px-4 lg:px-0 lg:py-40 z-10'>
           <h1 className='text-6xl font-bold'>Poliglotas no Universo!</h1>
-          <p className='max-w-[700px] lg:text-center indent-8'>
+          <p className='max-w-[700px] lg:text-center'>
             Transforme o aprendizado de idiomas em uma experiência divertida e acessível para crianças. Junte-se a nós e abra portas para um mundo de possibilidades.
           </p>
           <div className='flex gap-4'>
