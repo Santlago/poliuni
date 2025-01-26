@@ -25,7 +25,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className='card flex bg-base-200 items-center p-4 gap-4 justify-center'>
+      <section className='card flex bg-base-200 items-center p-4 gap-4 justify-center my-10'>
         <h1 className='text-2xl font-semibold'>Sobre o Projeto</h1>
         <div className='flex flex-col lg:block gap-4 text-lg text-justify lg:p-8'>
           <YouTubeVideo src='https://www.youtube.com/embed/8b3Ea2o9JYA' className='card w-full lg:w-1/3 aspect-video float-left lg:mx-6 my-2' />
@@ -34,7 +34,7 @@ export default function Home() {
           <p className='indent-8'>Nosso objetivo é ambicioso: queremos levar o PoliUni para diversos países, impactando crianças e jovens de várias partes do mundo. Queremos fazer parte da formação de uma nova geração de jovens que são políglotas, culturalmente conscientes e prontos para construir um mundo melhor. E o mais incrível é que tudo isso acontece de forma gratuita, graças ao trabalho voluntário de pessoas que compartilham o sonho de fazer uma diferença real.</p>
         </div>
       </section>
-      <section className='card flex flex-col items-center p-4 gap-4 justify-center my-4'>
+      <section className='card flex flex-col items-center p-4 gap-4 justify-center my-10'>
         <h1 className='text-2xl font-semibold'>Encontros Presenciais</h1>
         <p className='indent-8 text-justify'>Também damos aulas presenciais, garantindo uma experiência prática e envolvente que promove interações dinâmicas e o aprendizado ativo.</p>
         <div className="carousel carousel-center w-[100%] space-x-4 pr-8 lg:pr-0 lg:w-2/3">
