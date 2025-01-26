@@ -37,7 +37,7 @@ export default function Home() {
       <section className='card flex flex-col items-center p-4 gap-4 justify-center my-10'>
         <h1 className='text-2xl font-semibold'>Encontros Presenciais</h1>
         <p className='indent-8 text-justify'>Também damos aulas presenciais, garantindo uma experiência prática e envolvente que promove interações dinâmicas e o aprendizado ativo.</p>
-        <div className="carousel carousel-center w-[100%] space-x-4 pr-8 lg:pr-0 lg:w-2/3">
+        <div className="carousel carousel-center w-[100%] space-x-2 pr-8 lg:pr-0 lg:w-2/3">
           {Array(6).fill(0).map((_, i) => (
             <div key={i} id={`slide${i}`} className="card bg-base-100 h-[400px] lg:h-[700px] w-full carousel-item">
               <figure className='relative'>
