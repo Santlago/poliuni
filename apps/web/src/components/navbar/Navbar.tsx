@@ -29,7 +29,7 @@ export function Navbar() {
             <li><a>FAÇA PARTE</a></li>
           </ul>
         </div>
-        <Link href='/teste'>
+        <Link href='/'>
           <div className="btn btn-ghost text-xl"><Star />PoliUni</div>
         </Link>
       </div>
