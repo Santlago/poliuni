@@ -18,7 +18,9 @@ export default function Home() {
         <div className="absolute inset-0 bg-black opacity-50 hidden lg:block"></div>
         <div className='relative flex flex-col gap-4 lg:items-center justify-around px-4 lg:px-0 lg:py-40 z-10'>
           <h1 className='text-6xl font-bold'>Poliglotas no Universo!</h1>
-          <p className='max-w-[700px] lg:text-center'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          <p className='max-w-[700px] lg:text-center'>
+            Transforme o aprendizado de idiomas em uma experiência divertida e acessível para crianças. Junte-se a nós e abra portas para um mundo de possibilidades.
+          </p>
           <div className='flex gap-4'>
             <button className='btn btn-primary lg:hidden'>Comece Agora</button>
             <button className='btn btn-outline rounded-full hidden lg:block' data-theme='dark'>Comece Agora</button>
@@ -44,11 +46,11 @@ export default function Home() {
                 <Image src='/aula-presencial.jpg' width={4032} height={3024} alt='aula-presencial' />
                 <div className='absolute inset-0 bg-black opacity-25'></div>
               </figure>
-              <a href={`#slide${i-1}`}>
+              <a href={`#slide${i - 1}`}>
                 <ArrowLeft size={120} className='absolute top-1/2 btn btn-circle mx-4 hidden lg:block' />
               </a>
-              <a href={`#slide${i+1}`}>
-              <ArrowRight size={120} className='absolute top-1/2 right-0 btn btn-circle mx-4 hidden lg:block' />
+              <a href={`#slide${i + 1}`}>
+                <ArrowRight size={120} className='absolute top-1/2 right-0 btn btn-circle mx-4 hidden lg:block' />
               </a>
               <div className="card-body">
                 <h2 className="card-title">Projeto Cegonha</h2>
