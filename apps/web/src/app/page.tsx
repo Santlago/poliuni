@@ -5,20 +5,21 @@ import Image from 'next/image'
 export default function Home() {
   return (
     <>
-      <section className='relative py-8 my-10 -mx-4 lg:text-[#d8d8d8]'>
+      <section className='relative py-8 mb-10 lg:my-10 -mt-4 -mx-4 text-[#d8d8d8]'>
         <video
           autoPlay
           loop
           muted
-          className="absolute inset-0 w-full h-full object-cover hidden lg:block"
+          className='absolute inset-0 w-full h-full object-cover hidden lg:block'
         >
-          <source src="/landing-page.mp4" type="video/mp4" />
+          <source src='/landing-page.mp4' type='video/mp4' />
           Your browser does not support the video tag.
         </video>
-        <div className="absolute inset-0 bg-black opacity-50 hidden lg:block"></div>
+        <Image src='/landing-page.jpg' className='absolute inset-0 w-full h-full object-cover lg:hidden' width={3888} height={2592} alt='lading-page'/>
+        <div className='absolute bg-black inset-0 opacity-75 lg:opacity-50'></div>
         <div className='relative flex flex-col gap-4 lg:items-center justify-around px-4 lg:px-0 lg:py-40 z-10'>
           <h1 className='text-6xl font-bold'>Poliglotas no Universo!</h1>
-          <p className='max-w-[700px] lg:text-center'>
+          <p className='max-w-[700px] lg:text-center indent-8'>
             Transforme o aprendizado de idiomas em uma experiência divertida e acessível para crianças. Junte-se a nós e abra portas para um mundo de possibilidades.
           </p>
           <div className='flex gap-4'>
@@ -36,7 +37,7 @@ export default function Home() {
             </div>
             <BookCheck size={50} />
           </div>
-          <div className="p-16 w-full bg-base-200 flex-grow">
+          <div className='p-16 w-full bg-base-200 flex-grow'>
             <p className='text-lg font-semibold'>Aulas online interativas e dinâmicas para facilitar o aprendizado.</p>
           </div>
         </div>
@@ -48,7 +49,7 @@ export default function Home() {
             </div>
             <GraduationCap size={70} />
           </div>
-          <div className="p-16 w-full bg-base-200 flex-grow">
+          <div className='p-16 w-full bg-base-200 flex-grow'>
             <p className='text-lg font-semibold'>Professores altamente qualificados e experientes.</p>
           </div>
         </div>
@@ -60,7 +61,7 @@ export default function Home() {
             </div>
             <Globe size={60} />
           </div>
-          <div className="p-16 w-full bg-base-200 flex-grow">
+          <div className='p-16 w-full bg-base-200 flex-grow'>
             <p className='text-lg font-semibold'>Idiomas variados para expandir suas habilidades linguísticas.</p>
           </div>
         </div>
@@ -77,9 +78,9 @@ export default function Home() {
       <section className='card flex flex-col items-center p-4 gap-4 justify-center my-10'>
         <h1 className='text-2xl font-semibold'>Encontros Presenciais</h1>
         <p className='indent-8 text-justify'>Também damos aulas presenciais, garantindo uma experiência prática e envolvente que promove interações dinâmicas e o aprendizado ativo.</p>
-        <div className="carousel carousel-center w-[100%] space-x-2 pr-8 lg:pr-0 lg:w-2/3">
+        <div className='carousel carousel-center w-[100%] space-x-2 pr-8 lg:pr-0 lg:w-2/3'>
           {Array(6).fill(0).map((_, i) => (
-            <div key={i} id={`slide${i}`} className="card bg-base-100 h-[400px] lg:h-[700px] w-full carousel-item">
+            <div key={i} id={`slide${i}`} className='card bg-base-100 h-[400px] lg:h-[700px] w-full carousel-item'>
               <figure className='relative'>
                 <Image src='/aula-presencial.jpg' width={4032} height={3024} alt='aula-presencial' />
                 <div className='absolute inset-0 bg-black opacity-25'></div>
@@ -90,11 +91,11 @@ export default function Home() {
               <a href={`#slide${i + 1}`}>
                 <ArrowRight size={120} className='absolute top-1/2 right-0 btn btn-circle mx-4 hidden lg:block' />
               </a>
-              <div className="card-body">
-                <h2 className="card-title">Projeto Cegonha</h2>
+              <div className='card-body'>
+                <h2 className='card-title'>Projeto Cegonha</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non, inventore.</p>
-                <div className="card-actions justify-end">
-                  <button className="btn btn-primary">Saiba Mais</button>
+                <div className='card-actions justify-end'>
+                  <button className='btn btn-primary'>Saiba Mais</button>
                 </div>
               </div>
             </div>
