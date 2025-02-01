@@ -24,9 +24,9 @@ export function Navbar() {
           <ul
             tabIndex={0}
             className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
-            <li><a>AULAS</a></li>
-            <li><a>QUEM SOMOS</a></li>
-            <li><a>FAÇA PARTE</a></li>
+            <li><Link href='/aulas'>AULAS</Link></li>
+            <li><Link href='/'>QUEM SOMOS</Link></li>
+            <li><Link href='/'>FAÇA PARTE</Link></li>
           </ul>
         </div>
         <Link href='/'>
@@ -35,9 +35,9 @@ export function Navbar() {
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1">
-          <li><a>AULAS</a></li>
-          <li><a>QUEM SOMOS</a></li>
-          <li><a>FAÇA PARTE</a></li>
+          <li><Link href='/aulas'>AULAS</Link></li>
+          <li><Link href='/'>QUEM SOMOS</Link></li>
+          <li><Link href='/'>FAÇA PARTE</Link></li>
         </ul>
       </div>
       <div className="navbar-end flex gap-2">

@@ -1,3 +1,7 @@
+'use client'
+
+import { useState } from 'react'
+
 type YouTubeVideoProps = {
   src: string
   className?: string
@@ -6,14 +10,20 @@ type YouTubeVideoProps = {
 
 export function YouTubeVideo(props: YouTubeVideoProps) {
   const { src, className, title } = props
+  const [loaded, setLoaded] = useState(false)
+
+  const handleLoad = () => {
+    setLoaded(true)
+  }
 
   return (
     <iframe
-      src={src}
+      src={`https://www.youtube.com/embed/${src}`}
       title={title ?? 'YouTube video'}
       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
       allowFullScreen
-      className={className}
+      onLoad={handleLoad}
+      className={`${className} ${loaded ? '' : 'skeleton bg-base-content opacity-20'}`}
     ></iframe>
   )
 }
