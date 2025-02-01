@@ -42,7 +42,8 @@ export function Navbar() {
       </div>
       <div className="navbar-end flex gap-2">
         <ThemeController />
-        <div className="dropdown dropdown-end">
+        <button className='btn btn-primary'>Sign In</button>
+        {/* <div className="dropdown dropdown-end">
           <div tabIndex={0} role="button" className="btn btn-ghost btn-circle avatar">
             <div className="w-10 rounded-full">
               <img
@@ -62,7 +63,7 @@ export function Navbar() {
             <li><a>Settings</a></li>
             <li><a>Logout</a></li>
           </ul>
-        </div>
+        </div> */}
       </div>
     </div>
   )
