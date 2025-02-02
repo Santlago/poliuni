@@ -27,7 +27,7 @@ export default function Aula() {
           <div className='flex flex-col gap-2'>
             <h1 className='text-xl font-bold'>{video.title}</h1>
             <h2 className='text-sm font-semibold truncate'>{video.description}</h2>
-            <div className='flex flex-col lg:flex-row lg:justify-between'>
+            <div className='flex flex-col gap-2 lg:flex-row lg:justify-between'>
               <div className='flex items-center justify-between'>
                 <div className='flex items-center gap-3'>
                   <div className="btn btn-ghost btn-circle btn-sm avatar overflow-hidden">
