@@ -1,5 +1,6 @@
 import { YouTubeVideoThumbnail } from '@/components/youtube-video-thumbnail'
 import { videos } from '@/local-storage/videos'
+import Link from 'next/link'
 
 export default function Aulas() {
 
@@ -12,7 +13,7 @@ export default function Aulas() {
 
   return (
     <>
-      <h1 className='text-6xl text-center font-bold'>Aulas</h1>
+      <h1 className='text-6xl text-center font-bold '>Aulas</h1>
       <div className='w-full'>
         {languages.map((language, index) => (
           <section key={index} className='my-10 flex flex-col gap-4'>
@@ -21,13 +22,15 @@ export default function Aulas() {
               {videos.map((video, index) => (
                 video.language === language && (
                   <div key={index} className='carousel-item flex flex-col'>
-                    <YouTubeVideoThumbnail
-                      key={index}
-                      title={video.title}
-                      src={video.src}
-                      className='h-48 lg:h-56 aspect-video shadow-lg'
-                    />
-                    <h3 className='text-lg lg:text-xl font-bold'>{video.title} {index}</h3>
+                    <Link href={`/aula/${video.id}`}>
+                      <YouTubeVideoThumbnail
+                        key={index}
+                        title={video.title}
+                        src={video.src}
+                        className='h-48 lg:h-56 aspect-video shadow-lg'
+                      />
+                      <h3 className='text-lg lg:text-xl font-bold'>{video.title} {index}</h3>
+                    </Link>
                   </div>
                 )
               ))}

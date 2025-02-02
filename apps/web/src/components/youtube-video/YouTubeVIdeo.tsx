@@ -23,7 +23,7 @@ export function YouTubeVideo(props: YouTubeVideoProps) {
       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
       allowFullScreen
       onLoad={handleLoad}
-      className={`${className} ${loaded ? '' : 'skeleton bg-base-content opacity-20'}`}
+      className={`aspect-video ${className} ${loaded ? '' : 'skeleton bg-base-content opacity-20'}`}
     ></iframe>
   )
 }
