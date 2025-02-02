@@ -57,7 +57,7 @@ export default function Aula() {
               </div>
             </div>
           </div>
-          <div className={clsx(`card bg-base-200 p-4 ${isDescriptionOpen ? 'h-auto' : 'h-[150px] overflow-hidden'}`)}>
+          <div className={clsx(`card bg-base-200 p-4 ${isDescriptionOpen ? 'h-auto' : 'h-[150px]'}`)}>
             <h2 className='text-lg lg:text-xl font-bold'>Descrição</h2>
             <p className='overflow-hidden'>{video.description}</p>
             <div className='flex flex-col items-center opacity-60' onClick={handleClick}>
