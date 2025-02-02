@@ -15,13 +15,13 @@ export default function Aula() {
 
   return (
     <>
-      <div className='flex flex-col gap-6 overflow-y-scroll p-4'>
-        <section className='flex flex-col gap-3 no-scrollbar'>
-          <div className='-mx-4 -mt-4'>
+      <div className='flex flex-col justify-center lg:flex-row gap-6 overflow-y-scroll p-4 lg:px-24 lg:h-full'>
+        <section className='flex flex-col gap-3 no-scrollbar lg:w-[70%] lg:overflow-y-auto'>
+          <div className='-mx-4 -mt-4 lg:m-0'>
             <YouTubeVideo
               src={video.src}
               title={video.title}
-              className='w-full'
+              className='w-full lg:card'
             />
           </div>
           <div className='flex flex-col gap-2'>
@@ -49,7 +49,7 @@ export default function Aula() {
             </div>
           </div>
         </section>
-        <section className='w-full card bg-base-200 shadow-xl h-[700px]'>
+        <section className='w-full card bg-base-200 shadow-xl h-[700px] lg:h-full lg:w-[25%]'>
           <div className='card-body h-full'>
             <h2 className="card-title">Curso de {video.language}</h2>
             <p>Continue sua jornada no aprendizado de {video.language}</p>
