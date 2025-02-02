@@ -55,10 +55,10 @@ export default function Aula() {
           <div className='card-body h-full'>
             <h2 className="card-title">Curso de {video.language}</h2>
             <p>Continue sua jornada no aprendizado de {video.language}</p>
-            <div className='flex flex-col gap-4 overflow-y-scroll' style={{ scrollbarWidth: 'thin' }}>
+            <div className='flex flex-col overflow-y-scroll' style={{ scrollbarWidth: 'thin' }}>
               {videos.filter(vd => vd.language === video.language).map((video, index) => (
-                <div key={index} className='carousel-item flex flex-col'>
-                  <Link href={`/aula/${video.id}`}>
+                <Link key={index} href={`/aula/${video.id}`}>
+                  <div className='carousel-item py-2 flex flex-col hover:bg-base-300'>
                     <div className='flex flex-col lg:flex-row w-full gap-2'>
                       <div className='hidden lg:flex items-center'>{index + 1}</div>
                       <YouTubeVideoThumbnail
@@ -72,8 +72,8 @@ export default function Aula() {
                         <p>{video.teacher}</p>
                       </div>
                     </div>
-                  </Link>
-                </div>
+                  </div>
+                </Link>
               ))}
             </div>
           </div>
