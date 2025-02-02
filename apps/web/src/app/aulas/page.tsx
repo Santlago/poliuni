@@ -12,7 +12,7 @@ export default function Aulas() {
   }, [])
 
   return (
-    <>
+    <div className='p-4'>
       <h1 className='text-6xl text-center font-bold '>Aulas</h1>
       <div className='w-full'>
         {languages.map((language, index) => (
@@ -38,6 +38,6 @@ export default function Aulas() {
           </section>
         ))}
       </div>
-    </>
+    </div>
   )
 }

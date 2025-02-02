@@ -33,14 +33,14 @@ export default function RootLayout({
           ${geistSans.variable}
           ${geistMono.variable}
           antialiased
-          min-h-screen
+          h-screen
           flex
           flex-col
           bg-base-100
           `}
       >
         <Navbar />
-        <main className='grow p-4 bg-base-300'>
+        <main className='grow bg-base-300 overflow-auto' style={{ scrollbarWidth: 'thin' }}>
           {children}
         </main>
         <Footer />
