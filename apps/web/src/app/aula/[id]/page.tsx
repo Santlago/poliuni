@@ -61,8 +61,10 @@ export default function Aula() {
             <h2 className='text-lg lg:text-xl font-bold'>Descrição</h2>
             <p className='overflow-hidden'>{video.description}</p>
             <div className='flex flex-col items-center opacity-60' onClick={handleClick}>
-              <p className='text-sm'>Veja mais</p>
-              {isDescriptionOpen ? <ChevronUp size={16} /> : <ChevronDown size={16}/>}
+              <div className='flex flex-col items-center cursor-pointer'>
+                <p className='text-sm'>Leia mais</p>
+                {isDescriptionOpen ? <ChevronUp size={16} /> : <ChevronDown size={16} />}
+              </div>
             </div>
           </div>
         </section>

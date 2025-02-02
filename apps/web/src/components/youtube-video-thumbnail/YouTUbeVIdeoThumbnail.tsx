@@ -29,7 +29,7 @@ export function YouTubeVideoThumbnail(props: YouTubeVideoThumbnailProps) {
       <div className="absolute inset-0 flex items-center justify-center">
         <svg
           xmlns="http://www.w3.org/2000/svg"
-          className="h-16 w-16 text-white"
+          className="h-16 w-16 lg:h-8 lg:w-8 text-white"
           viewBox="0 0 24 24"
           fill="currentColor"
         >
