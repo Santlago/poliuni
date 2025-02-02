@@ -1,5 +1,6 @@
 'use client'
 
+import clsx from 'clsx'
 import Image from 'next/image'
 
 type YouTubeVideoThumbnailProps = {
@@ -7,10 +8,11 @@ type YouTubeVideoThumbnailProps = {
   className?: string
   title?: string
   description?: string
+  playWidth?: string
 }
 
 export function YouTubeVideoThumbnail(props: YouTubeVideoThumbnailProps) {
-  const { src, className, title } = props
+  const { src, className, title, playWidth } = props
 
   const handleClick = () => {
     // window.location.href = `https://www.youtube.com/watch?v=${src}`
@@ -29,7 +31,7 @@ export function YouTubeVideoThumbnail(props: YouTubeVideoThumbnailProps) {
       <div className="absolute inset-0 flex items-center justify-center">
         <svg
           xmlns="http://www.w3.org/2000/svg"
-          className="h-16 w-16 lg:h-8 lg:w-8 text-white"
+          className={clsx(`text-white ${playWidth ? `h-${playWidth} w-${playWidth}` : 'lg:h-8 lg:w-8 h-16 w-16'}`)}
           viewBox="0 0 24 24"
           fill="currentColor"
         >

@@ -28,6 +28,7 @@ export default function Aulas() {
                         title={video.title}
                         src={video.src}
                         className='h-48 lg:h-56 aspect-video shadow-lg'
+                        playWidth='16'
                       />
                       <h3 className='text-lg lg:text-xl font-bold'>{video.title} {index}</h3>
                     </Link>
