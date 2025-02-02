@@ -3,7 +3,7 @@ import { Video } from '@/types/video'
 export const videos: Video[] = []
 
 const englishVideos: Video[] = Array(11).fill(null).map((_, index) => ({
-  id: `video-${index}`,
+  id: `video-${index + 1}`,
   title: 'Aula de Inglês',
   description: 'Aprenda inglês de forma fácil e divertida com nossos professores qualificados.',
   language: 'inglês',
@@ -12,7 +12,7 @@ const englishVideos: Video[] = Array(11).fill(null).map((_, index) => ({
 } as Video))
 
 const frenchVideos: Video[] = Array(11).fill(null).map((_, index) => ({
-  id: `video-${index}`,
+  id: `video-${index + 1}`,
   title: 'Aula de Francês',
   description: 'Aprenda francês de forma fácil e divertida com nossos professores qualificados.',
   language: 'francês',
@@ -21,7 +21,7 @@ const frenchVideos: Video[] = Array(11).fill(null).map((_, index) => ({
 } as Video))
 
 const spanishVideos: Video[] = Array(11).fill(null).map((_, index) => ({
-  id: `video-${index}`,
+  id: `video-${index + 1}`,
   title: 'Aula de Espanhol',
   description: 'Aprenda espanhol de forma fácil e divertida com nossos professores qualificados.',
   language: 'espanhol',
