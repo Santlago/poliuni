@@ -1,0 +1,13 @@
+build
+coverage
+node_modules
+out
+/localstack
+/postgres
+/rabbitmq
+.DS_Store
+.turbo
+.env.sentry*
+.env.*.local
+newrelic_agent.log
+.vscode
