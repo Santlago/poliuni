@@ -5,7 +5,7 @@ import { FooterYouTubeIcon } from '@/icons/FooterYouTubeIcon'
 
 export function Footer() {
   return (
-    <footer className="footer bg-neutral text-neutral-content items-center p-4 hidden lg:flex">
+    <footer className="footer bg-neutral text-neutral-content items-center p-2 hidden lg:flex">
       <div className="grid-flow-col items-center absolute left-4">
         <FooterHashTagIcon className='w-10' />
         <p>PoluUni © {new Date().getFullYear()} - All right reserved</p>
