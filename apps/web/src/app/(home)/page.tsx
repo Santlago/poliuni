@@ -8,10 +8,12 @@ import { StatsSection } from './sections/StatsSection'
 export default function Home() {
 
   return (
-    <div className='p-4'>
+    <div className='py-4'>
       <LandingSection />
       <StatsSection />
-      <AboutSection />
+      <div className='bg-base-200'>
+        <AboutSection />
+      </div>
       <MeetingsSection />
     </div>
   )

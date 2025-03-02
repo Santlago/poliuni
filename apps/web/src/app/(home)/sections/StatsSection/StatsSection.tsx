@@ -2,41 +2,32 @@ import { BookCheck, Globe, GraduationCap } from 'lucide-react'
 
 export const StatsSection = () => {
   return (
-    <section className='flex flex-col lg:flex-row gap-8 justify-between'>
+    <section className='flex flex-col max-w-7xl mx-auto lg:flex-row gap-8 justify-between'>
         <div className='flex flex-col items-center lg:w-[30%] gap-4'>
-          <div className='flex items-center gap-3 text-secondary'>
-            <div className='flex flex-col text-right'>
-              <h1 className='text-6xl font-bold'>24</h1>
-              <h2 className='text-3xl font-bold'>Aulas</h2>
-            </div>
-            <BookCheck size={50} />
+          <div className='flex items-end gap-2'>
+            <h1 className='text-4xl font-bold'>24 Aulas</h1>
+            <BookCheck size={40} />
           </div>
-          <div className='p-16 w-full bg-base-200 flex-grow'>
-            <p className='text-lg font-semibold'>Aulas online interativas e dinâmicas para facilitar o aprendizado.</p>
+          <div className='p-10 w-full bg-base-200 flex-grow shadow-md'>
+            <p className='text-xl font-semibold'>Aulas online interativas e dinâmicas para facilitar o aprendizado.</p>
           </div>
         </div>
         <div className='flex flex-col items-center lg:w-[30%] gap-4'>
-          <div className='flex items-center gap-3 text-warning'>
-            <div className='flex flex-col text-right'>
-              <h1 className='text-6xl font-bold'>10</h1>
-              <h2 className='text-3xl font-bold'>Professores</h2>
-            </div>
-            <GraduationCap size={70} />
+          <div className='flex items-end gap-2 text-warning'>
+            <h1 className='text-4xl font-bold'>10 Professores</h1>
+            <GraduationCap size={40} />
           </div>
-          <div className='p-16 w-full bg-base-200 flex-grow'>
-            <p className='text-lg font-semibold'>Professores altamente qualificados e experientes.</p>
+          <div className='p-10 w-full bg-base-200 flex-grow shadow-md'>
+            <p className='text-xl font-semibold'>Professores altamente qualificados e experientes.</p>
           </div>
         </div>
         <div className='flex flex-col items-center lg:w-[30%] gap-4'>
-          <div className='flex items-center gap-3 text-primary'>
-            <div className='flex flex-col text-right'>
-              <h1 className='text-6xl font-bold'>6</h1>
-              <h2 className='text-3xl font-bold'>Idiomas</h2>
-            </div>
-            <Globe size={60} />
+          <div className='flex items-end gap-2 text-primary'>
+            <h1 className='text-4xl font-bold'>6 Idiomas</h1>
+            <Globe size={40} />
           </div>
-          <div className='p-16 w-full bg-base-200 flex-grow'>
-            <p className='text-lg font-semibold'>Idiomas variados para expandir suas habilidades linguísticas.</p>
+          <div className='p-10 w-full bg-base-200 flex-grow shadow-md'>
+            <p className='text-xl font-semibold'>Idiomas variados para expandir suas habilidades linguísticas.</p>
           </div>
         </div>
       </section>
