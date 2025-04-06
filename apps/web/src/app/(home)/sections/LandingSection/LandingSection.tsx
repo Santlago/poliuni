@@ -2,7 +2,7 @@ import Image from 'next/image'
 
 export const LandingSection = () => {
   return (
-    <section className='relative py-32 lg:py-8 mb-10 lg:my-10 -mt-4 text-[#d8d8d8]'>
+    <section className='relative py-32 lg:py-8 mb-10 lg:my-10 -m-4 text-[#d8d8d8]'>
       <video
         autoPlay
         loop
