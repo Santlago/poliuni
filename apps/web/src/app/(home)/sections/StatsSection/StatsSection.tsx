@@ -8,7 +8,7 @@ export const StatsSection = () => {
             <h1 className='text-4xl font-bold'>24 Aulas</h1>
             <BookCheck size={40} />
           </div>
-          <div className='p-10 w-full bg-base-200 flex-grow shadow-md'>
+          <div className='p-10 w-full bg-base-200 grow shadow-md'>
             <p className='text-xl font-semibold'>Aulas online interativas e dinâmicas para facilitar o aprendizado.</p>
           </div>
         </div>
@@ -17,7 +17,7 @@ export const StatsSection = () => {
             <h1 className='text-4xl font-bold'>10 Professores</h1>
             <GraduationCap size={40} />
           </div>
-          <div className='p-10 w-full bg-base-200 flex-grow shadow-md'>
+          <div className='p-10 w-full bg-base-200 grow shadow-md'>
             <p className='text-xl font-semibold'>Professores altamente qualificados e experientes.</p>
           </div>
         </div>
@@ -26,7 +26,7 @@ export const StatsSection = () => {
             <h1 className='text-4xl font-bold'>6 Idiomas</h1>
             <Globe size={40} />
           </div>
-          <div className='p-10 w-full bg-base-200 flex-grow shadow-md'>
+          <div className='p-10 w-full bg-base-200 grow shadow-md'>
             <p className='text-xl font-semibold'>Idiomas variados para expandir suas habilidades linguísticas.</p>
           </div>
         </div>

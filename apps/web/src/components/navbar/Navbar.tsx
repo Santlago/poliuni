@@ -23,7 +23,7 @@ export function Navbar() {
           </div>
           <ul
             tabIndex={0}
-            className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+            className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow-sm">
             <li><Link href='/aulas'>AULAS</Link></li>
             <li><Link href='/'>QUEM SOMOS</Link></li>
             <li><Link href='/'>FAÇA PARTE</Link></li>
@@ -53,7 +53,7 @@ export function Navbar() {
           </div>
           <ul
             tabIndex={0}
-            className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+            className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow-sm">
             <li>
               <a className="justify-between">
                 Profile
