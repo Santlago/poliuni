@@ -1,13 +1,20 @@
 import express from 'express'
+import http from 'http'
 
 const port = process.env.PORT ?? 3000
 
-const app = express()
+export async function buildApp (): Promise<{ server: any }> {
+  const app = express()
 
-app.get('/', (req, res) => {
-  res.send('Hello World!')
-})
+  const server = http.createServer(app)
 
-app.listen(port, () => {
-  console.log(`Example app listening on port ${port}`)
-})
+  app.get('/', (req, res) => {
+    res.send('Hello World!')
+  })
+
+  app.listen(port, () => {
+    console.log(`Example app listening on port ${port}`)
+  })
+
+  return { server }
+}
