@@ -30,7 +30,7 @@ export function Navbar() {
           </ul>
         </div>
         <Link href='/'>
-          <div className="btn btn-ghost text-xl"><Star />PoliUni</div>
+          <div className="btn btn-ghost text-xl text-primary"><Star color='currentColor'/>PoliUni</div>
         </Link>
       </div>
       <div className="navbar-center hidden lg:flex">
