@@ -13,7 +13,7 @@ export async function buildApp (): Promise<{ server: any }> {
   })
 
   app.listen(port, () => {
-    console.log(`Example app listening on port ${port}`)
+    console.log(`App listening on port ${port}`)
   })
 
   return { server }

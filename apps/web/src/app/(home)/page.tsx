@@ -8,7 +8,7 @@ import { StatsSection } from './sections/StatsSection'
 export default function Home() {
 
   return (
-    <div className='py-4 px-4 lg:px-0'>
+    <div className='py-4 px-4 lg:px-0 overflow-hidden'>
       <LandingSection />
       <StatsSection />
       <div className='bg-base-200'>

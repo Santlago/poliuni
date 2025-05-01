@@ -13,7 +13,7 @@ export default function Aulas() {
 
   return (
     <div className='p-4'>
-      <h1 className='text-6xl text-center font-bold '>Aulas</h1>
+      <h1 className='text-6xl font-bold '>Aulas</h1>
       <div className='w-full'>
         {languages.map((language, index) => (
           <section key={index} className='my-10 flex flex-col gap-4'>
