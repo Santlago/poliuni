@@ -4,12 +4,14 @@
   "description": "## 📖 Sobre o Projeto",
   "main": "index.js",
   "scripts": {
+    "migrate:dev": "node apps/internal-api/migrations/migrate.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "clsx": "^2.1.1"
+    "clsx": "^2.1.1",
+    "pg": "^8.11.4"
   }
 }
