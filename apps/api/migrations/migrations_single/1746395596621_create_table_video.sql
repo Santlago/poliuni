@@ -6,5 +6,5 @@ CREATE TABLE video (
   language VARCHAR(50), -- e.g., 'English', 'Spanish'
   order_in_course INTEGER, -- to sort within a course/module
   is_active BOOLEAN DEFAULT TRUE, -- to hide/show on frontend
-  create_date TIMESTAMP NOT NULL DEFAULT timezone('utc'::text, now())
+  create_date TIMESTAMP NOT NULL DEFAULT now()
 );

@@ -2,7 +2,7 @@ require('dotenv').config();
 const { Client } = require('pg');
 const { runMigrations } = require('./run-migrations')
 
-const connectionString = process.env.DATABASE_URL || `postgres://${process.env.DB_USER}:${process.env.DB_PASSWORD}@localhost:5432/postgres`;
+const connectionString = process.env.DATABASE_URL
 console.log('ConnectionString', connectionString);
 
 const client = new Client({

@@ -1,13 +1,18 @@
 services:
   postgres:
-    image: postgres:15
+    image: postgres:17
     container_name: poliuni-postgres
     environment:
-      POSTGRES_PASSWORD: postgres
+      POSTGRES_PASSWORD: "postgres"
     ports:
       - "5432:5432"
     volumes:
       - ./postgres:/var/lib/postgresql/data
+    networks:
+      - poliuni-network
+
+networks:
+  poliuni-network:
 
 volumes:
   poliuni-volume:
