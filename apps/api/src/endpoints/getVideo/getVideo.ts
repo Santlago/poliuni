@@ -23,7 +23,6 @@ type Row = {
 export const handler: Handler = async (req, res) => {
   const pool = await getPool()
   const { videoId } = schema.validateSync(req.body)
-  console.log('videoId >>>', videoId)
 
   const { rows: [video] } = await pool.query<Row>(
     `SELECT id,
