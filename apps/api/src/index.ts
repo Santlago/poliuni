@@ -1,6 +1,4 @@
-import { logger } from './app'
-import { createApp } from './app/create-app'
-import { loadEndpoints } from './app/load-endpoints'
+import { createApp, loadEndpoints, logger } from './app'
 import { ENDPOINTS_DIR, PORT } from './constants'
 import { createServer } from 'http'
 

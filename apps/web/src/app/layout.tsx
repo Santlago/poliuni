@@ -5,6 +5,7 @@ import { Navbar } from '@/components/navbar'
 import { Footer } from '@/components/footer'
 import { SpeedInsights } from "@vercel/speed-insights/next"
 import { Analytics } from '@vercel/analytics/next'
+import ClientLayout from '@/clientLayout/ClientLayout'
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -39,13 +40,15 @@ export default function RootLayout({
           bg-base-100
           `}
       >
-        <Navbar />
-        <main className='grow bg-base-300 overflow-auto' style={{ scrollbarWidth: 'thin' }}>
-          {children}
-        </main>
-        <Footer />
-        <SpeedInsights />
-        <Analytics />
+        <ClientLayout>
+          <Navbar />
+          <main className='grow bg-base-300 overflow-auto' style={{ scrollbarWidth: 'thin' }}>
+            {children}
+          </main>
+          <Footer />
+          <SpeedInsights />
+          <Analytics />
+        </ClientLayout>
       </body>
     </html>
   )

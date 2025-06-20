@@ -13,6 +13,7 @@
   },
   "license": "ISC",
   "workspaces": [
-    "apps/*"
+    "apps/*",
+    "libs/*"
   ]
 }

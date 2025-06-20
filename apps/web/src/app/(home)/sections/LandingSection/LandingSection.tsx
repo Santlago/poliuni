@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import Link from 'next/link'
 
 export const LandingSection = () => {
   return (
@@ -20,8 +21,12 @@ export const LandingSection = () => {
           Transforme o aprendizado de idiomas em uma experiência divertida e acessível para crianças. Junte-se a nós e abra portas para um mundo de possibilidades.
         </p>
         <div className='flex gap-4'>
-          <button className='btn btn-primary lg:hidden'>Comece Agora</button>
-          <button className='btn btn-outline rounded-full hidden lg:block' data-theme='dark'>Comece Agora</button>
+          <Link href='/aulas'>
+            <button className='btn btn-primary lg:hidden'>Comece Agora</button>
+          </Link>
+          <Link href='/aulas'>
+            <button className='btn btn-outline rounded-full hidden lg:block' data-theme='dark'>Comece Agora</button>
+          </Link>
         </div>
       </div>
     </section>

@@ -25,9 +25,9 @@ export function YouTubeVideoThumbnail(props: YouTubeVideoThumbnailProps) {
         alt={title ?? 'YouTube video'}
         width={480}
         height={360}
-        className="card w-full h-full aspect-video object-cover"
+        className="w-full h-full aspect-video object-cover"
       />
-      <div className='card absolute bg-black inset-0 opacity-20'></div>
+      <div className='absolute bg-black inset-0 opacity-20'></div>
       <div className="absolute inset-0 flex items-center justify-center">
         <svg
           xmlns="http://www.w3.org/2000/svg"
