@@ -39,11 +39,12 @@ export default function Aulas() {
           {videos.map(video => (
             <div key={video.id} className='card bg-base-100 shadow-lg'>
               <figure>
-                <Link href={`/aula/${video.id}`}>
+                <Link href={`/aula/${video.id}`} className='w-full'>
                   <YouTubeVideoThumbnail
                     title={video.title}
                     src={video.youtubeVideoId}
                     playWidth='16'
+                    className='w-full'
                   />
                 </Link>
               </figure>
