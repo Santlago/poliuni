@@ -3,14 +3,12 @@
 import { YouTubeVideo } from '@/components/youtube-video'
 import { YouTubeVideoThumbnail } from '@/components/youtube-video-thumbnail'
 import { useClient } from '@/hooks/useClient'
-import { Video } from '@/types/video'
 import { useQuery } from '@tanstack/react-query'
 import clsx from 'clsx'
-import { BellOff, Bookmark, ChevronDown, ChevronUp, Forward, HeartHandshake, ThumbsUp } from 'lucide-react'
+import { BellOff, Bookmark, ChevronDown, Forward, HeartHandshake, ThumbsUp } from 'lucide-react'
 import Image from 'next/image'
 import Link from 'next/link'
 import { useParams } from 'next/navigation'
-import { useState } from 'react'
 
 export default function Aula() {
   const params = useParams<{ videoId: string }>()
