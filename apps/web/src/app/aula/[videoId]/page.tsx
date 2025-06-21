@@ -1,38 +1,48 @@
 'use client'
 
 import { YouTubeVideo } from '@/components/youtube-video'
-import { YouTubeVideoThumbnail } from '@/components/youtube-video-thumbnail'
-import { useClient } from '@/hooks/useClient'
-import { useQuery } from '@tanstack/react-query'
+// import { YouTubeVideoThumbnail } from '@/components/youtube-video-thumbnail'
+import { GetVideoResult } from 'api-types/endpoints/getVideo'
+// import { useClient } from '@/hooks/useClient'
+// import { useQuery } from '@tanstack/react-query'
 import clsx from 'clsx'
 import { BellOff, Bookmark, ChevronDown, Forward, HeartHandshake, ThumbsUp } from 'lucide-react'
 import Image from 'next/image'
-import Link from 'next/link'
-import { useParams } from 'next/navigation'
+// import Link from 'next/link'
+// import { useParams } from 'next/navigation'
 
 export default function Aula() {
-  const params = useParams<{ videoId: string }>()
-  const client = useClient()
+  // const params = useParams<{ videoId: string }>()
+  // const client = useClient()
 
-  const videoId = params.videoId!
-  const getVideo = useQuery({
-    queryKey: ['getVideo', { videoId }] as const,
-    queryFn: ({ queryKey, signal }) => client.getVideo(queryKey[1], { signal })
-  })
-  const video = getVideo.data
+  // const videoId = params.videoId!
+  // const getVideo = useQuery({
+  //   queryKey: ['getVideo', { videoId }] as const,
+  //   queryFn: ({ queryKey, signal }) => client.getVideo(queryKey[1], { signal })
+  // })
+  // const video = getVideo.data
 
-  const getVideos = useQuery({
-    queryKey: ['getVideos'] as const,
-    queryFn: ({ signal }) => client.getVideos({ signal })
-  })
-  const videos = getVideos.data?.data ?? []
+  // const getVideos = useQuery({
+  //   queryKey: ['getVideos'] as const,
+  //   queryFn: ({ signal }) => client.getVideos({ signal })
+  // })
+  // const videos = getVideos.data?.data ?? []
+  const video: GetVideoResult = {
+    id: 'a516270f-37bb-443b-b570-131529e28624',
+    title: 'Se apresente em francês | Vlog na França #1',
+    description: 'Neste primeiro episódio do nosso vlog na França, você vai aprender como se apresentar de forma simples e natural em francês, com exemplos reais do dia a dia. Ideal para iniciantes que querem começar a falar desde o primeiro vídeo!',
+    language: 'French',
+    youtubeVideoId: 'ZRfQuqdg0nc',
+    orderInCourse: 0,
+    createDate: new Date().toISOString()
+  }
 
   return (
     <>
-      <div className='flex flex-col justify-center lg:flex-row gap-6 overflow-y-scroll p-4 md:pb-0 lg:px-24 lg:h-full'>
-        {getVideo.isLoading && (
+      <div className='flex flex-col justify-center lg:flex-row gap-6 overflow-y-auto p-4 md:pb-0 lg:px-24 lg:h-full'>
+        {/* {getVideo.isLoading && (
           <div className='w-full h-full skeleton bg-base-200'/>
-        )}
+        )} */}
         {video && (
           <section className='flex flex-col gap-3 no-scrollbar lg:w-[70%] lg:overflow-y-auto'>
             <div className='-mx-4 -mt-4 lg:m-0'>
@@ -52,7 +62,7 @@ export default function Aula() {
                         <Image src='https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp' width={200} height={200} alt='avatar' />
                       </div>
                     </div>
-                    <p className='font-semibold'>Teacher</p>
+                    <p className='font-semibold'>IIyes</p>
                   </div>
                   <div className='btn btn-xs lg:hidden'>
                     <BellOff size={16} className='opacity-70' />
@@ -60,7 +70,7 @@ export default function Aula() {
                   </div>
                 </div>
                 <div className='flex justify-between lg:gap-4'>
-                  <div className='btn btn-sm'><ThumbsUp size={16} />512</div>
+                  <div className='btn btn-sm'><ThumbsUp size={16} />0</div>
                   <div className='btn btn-sm'><Forward size={16} />Share</div>
                   <div className='btn btn-sm'><Bookmark size={16} />Save</div>
                   <div className='btn btn-sm'><HeartHandshake size={16} />Thanks</div>
@@ -73,7 +83,7 @@ export default function Aula() {
             </div>
           </section>
         )}
-        <section className='w-full card bg-base-200 shadow-xl h-[700px] lg:h-full lg:w-[25%]'>
+        {/* <section className='w-full card bg-base-200 shadow-xl h-[700px] lg:h-full lg:w-[25%] overflow-hidden'>
           {true && (
             <div className='w-full h-full bg-base-200 skeleton'/>
           )}
@@ -104,7 +114,7 @@ export default function Aula() {
               </div>
             </div>
           )}
-        </section>
+        </section> */}
       </div>
     </>
   )

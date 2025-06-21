@@ -1,17 +1,27 @@
 'use client'
 
 import { YouTubeVideoThumbnail } from '@/components/youtube-video-thumbnail'
-import { useClient } from '@/hooks/useClient'
-import { useQuery } from '@tanstack/react-query'
+import { GetVideosResult } from 'api-types/endpoints/getVideos'
+// import { useClient } from '@/hooks/useClient'
+// import { useQuery } from '@tanstack/react-query'
 import Link from 'next/link'
 
 export default function Aulas() {
-  const client = useClient()
-  const getVideos = useQuery({
-    queryKey: ['getVideos'] as const,
-    queryFn: ({ signal }) => client.getVideos({ signal })
-  })
-  const videos = getVideos.data?.data ?? []
+  // const client = useClient()
+  // const getVideos = useQuery({
+  //   queryKey: ['getVideos'] as const,
+  //   queryFn: ({ signal }) => client.getVideos({ signal })
+  // })
+  // const videos = getVideos.data?.data ?? []
+  const videosData: GetVideosResult = { data: [{
+    id: 'a516270f-37bb-443b-b570-131529e28624',
+    title: 'Se apresente em francês | Vlog na França #1',
+    description: 'Neste primeiro episódio do nosso vlog na França, você vai aprender como se apresentar de forma simples e natural em francês, com exemplos reais do dia a dia. Ideal para iniciantes que querem começar a falar desde o primeiro vídeo!',
+    language: 'French',
+    youtubeVideoId: 'ZRfQuqdg0nc',
+    orderInCourse: 0
+  }]}
+  const videos = videosData.data
 
   return (
     <div className='h-full flex flex-col items-center'>
@@ -29,13 +39,13 @@ export default function Aulas() {
           <h2>aprenda idiomas sem gastar um centavo!</h2>
         </div>
         <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4'>
-          {getVideos.isLoading && (
+          {/* {getVideos.isLoading && (
             <>
               <div className='skeleton bg-base-200 w-full h-[332px]'/>
               <div className='skeleton bg-base-200 w-full h-[332px]'/>
               <div className='skeleton bg-base-200 w-full h-[332px]'/>
             </>
-          )}
+          )} */}
           {videos.map(video => (
             <div key={video.id} className='card bg-base-100 shadow-lg'>
               <figure>
